@@ -228,7 +228,6 @@ void DriverNodelet::setupDevice ()
     }
 
     NODELET_INFO ("Number devices connected: %d", driver.getNumberDevices ());
-    //for (unsigned deviceIdx = 0; deviceIdx < driver.getNumberDevices (); ++deviceIdx)
     for(unsigned deviceIdx = 1; deviceIdx < driver.getNumberDevices (); ++deviceIdx)	  
     {
       NODELET_INFO("%u. device on bus %03u:%02u is a %s (%03x) from %s (%03x) with serial id \'%s\'",
